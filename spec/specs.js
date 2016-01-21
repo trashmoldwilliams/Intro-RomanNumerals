@@ -5,8 +5,8 @@ describe("checkLargestValue", function() {
   })
 });
 
-// describe("printSymbols", function() {
-//   it("prints roman numerals based on value from checkLargestSymbol", function() {
-//     expect(printSymbols("102")).to.equal("CII");
-//   })
-// });
+describe("printSymbols", function() {
+  it("prints roman numerals based on value from checkLargestValue", function() {
+    expect(printSymbols("102")).to.equal("CII");
+  })
+});
