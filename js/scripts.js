@@ -12,7 +12,7 @@ var checkLargestValue = function(inputNumber) {
 
 var printSymbols = function(inputNumber) {
   var output = "";
-  for (inputNumber; inputNumber > 0;) {
+  for (inputNumber; inputNumber > 0; inputNumber -= symbolValue) {
     var symbolValue = checkLargestValue(inputNumber);
     if (symbolValue === 1000) {output += "M"};
     if (symbolValue === 500) {output += "D"};
@@ -22,7 +22,6 @@ var printSymbols = function(inputNumber) {
     if (symbolValue === 5) {output += "V"};
     if (symbolValue === 1) {output += "I"};
 
-    inputNumber -= symbolValue;
   }
   return output;
 };
